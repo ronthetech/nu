@@ -4,6 +4,7 @@ specifiers:
   '@headlessui/react': ^1.7.7
   '@heroicons/react': ^2.0.13
   '@next/font': 13.1.5
+  '@tailwindcss/forms': ^0.5.3
   '@types/node': ^18.11.18
   '@types/prettier': ^2.7.2
   '@types/react': ^18.0.27
@@ -30,6 +31,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
 
 devDependencies:
+  '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
   '@types/node': 18.11.18
   '@types/prettier': 2.7.2
   '@types/react': 18.0.27
@@ -283,6 +285,15 @@ packages:
     dependencies:
       tslib: 2.4.1
     dev: false
+
+  /@tailwindcss/forms/0.5.3_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-y5mb86JUoiUgBjY/o6FJSFZSEttfb3Q5gllE4xoKjAAD+vBrnIhE4dViwUuow3va8mpH4s9jyUbUbrRGoRdc2Q==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
+    dependencies:
+      mini-svg-data-uri: 1.4.4
+      tailwindcss: 3.2.4_postcss@8.4.21
+    dev: true
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
@@ -1802,6 +1813,11 @@ packages:
     dependencies:
       braces: 3.0.2
       picomatch: 2.3.1
+    dev: true
+
+  /mini-svg-data-uri/1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
     dev: true
 
   /minimatch/3.1.2:
