@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl lg:text-5xl font-bold tracking-wide;
+  }
+  h2 {
+    @apply text-2xl lg:text-3xl font-semibold;
+  }
+  h3 {
+    @apply text-xl lg:text-2xl font-semibold leading-6;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-lg py-1 px-2 font-semibold uppercase text-white shadow-md focus:outline-none focus:ring-2 focus:ring-opacity-75 sm:py-1 sm:px-2;
+  }
+  .btn-primary {
+    @apply bg-indigo-700 hover:bg-indigo-500 focus:ring-indigo-400;
+  }
+  .btn-success {
+    @apply bg-emerald-600 hover:bg-emerald-500 focus:ring-emerald-400;
+  }
+  .btn-danger {
+    @apply bg-red-700 hover:bg-red-500 focus:ring-red-400;
+  }
+  .btn-warn {
+    @apply bg-yellow-500 text-gray-800 hover:bg-yellow-400 focus:ring-yellow-300;
+  }
+  .badge {
+    @apply pointer-events-none rounded-full py-1 px-2 text-sm font-semibold text-white shadow-md;
+  }
+}
